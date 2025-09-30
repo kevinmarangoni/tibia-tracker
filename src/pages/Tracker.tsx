@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
-  Container,
   Typography,
   Box,
-  Paper,
   Alert,
-  Chip,
-  Button,
   Switch,
   FormControlLabel,
   CircularProgress

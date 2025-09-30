@@ -23,7 +23,7 @@ export const GuildSelect: React.FC<GuildSelectProps> = ({
   loading = false,
   error
 }) => {
-  const handleChange = (event: any, newValue: Guild | null) => {
+  const handleChange = (_event: any, newValue: Guild | null) => {
     onGuildChange(newValue?.name || '');
   };
 

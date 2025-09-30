@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Table,
   TableBody,
@@ -6,8 +5,6 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  Paper,
-  Chip,
   Typography,
   Box,
   Avatar,
@@ -18,7 +15,7 @@ import {
   Link
 } from '@mui/material';
 import { ContentCopy } from '@mui/icons-material';
-import type { GuildMember, GuildDetails } from '../types/tibia';
+import type { GuildDetails } from '../types/tibia';
 
 interface GuildMembersTableProps {
   guildDetails: GuildDetails | null;
