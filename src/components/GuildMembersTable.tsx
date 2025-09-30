@@ -12,9 +12,11 @@ import {
   Tooltip,
   Snackbar,
   Alert,
-  Link
+  Link,
+  Chip
 } from '@mui/material';
 import { ContentCopy } from '@mui/icons-material';
+import { useState } from 'react';
 import type { GuildDetails } from '../types/tibia';
 
 interface GuildMembersTableProps {
@@ -44,7 +46,7 @@ export const GuildMembersTable: React.FC<GuildMembersTableProps> = ({
   guildDetails,
   loading = false
 }) => {
-  const [copySuccess, setCopySuccess] = React.useState<string | null>(null);
+  const [copySuccess, setCopySuccess] = useState<string | null>(null);
 
   const handleCopyExiva = async (playerName: string) => {
     const exivaCommand = `exiva "${playerName}"`;
