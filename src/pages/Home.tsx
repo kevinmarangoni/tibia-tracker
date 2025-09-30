@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react';
 import { Box, CircularProgress, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 export const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     // Redireciona para a página de tracking após 2 segundos
     const timer = setTimeout(() => {
-      window.location.href = '/tracker';
+      navigate('/tracker');
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [navigate]);
 
   return (
     <Box
