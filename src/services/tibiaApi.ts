@@ -4,7 +4,7 @@ import type { TibiaApiResponse, GuildDetailsResponse } from '../types/tibia';
 const API_BASE_URL = 'https://api.tibiadata.com/v4';
 
 export class TibiaApiService {
-  static async getGuilds(world: string = 'Ferobra'): Promise<TibiaApiResponse> {
+  static async getGuilds(world: string = 'Inabra'): Promise<TibiaApiResponse> {
     try {
       const response = await axios.get(`${API_BASE_URL}/guilds/${world}`);
       return response.data;

@@ -1,10 +1,10 @@
-# 🏰 Tibia Watcher - Ferobra
+# 🏰 Tibia Watcher - Inabra
 
-Uma aplicação web para rastrear guilds e jogadores online do servidor Ferobra do Tibia.
+Uma aplicação web para rastrear guilds e jogadores online do servidor Inabra do Tibia.
 
 ## 🚀 Funcionalidades
 
-- **Listagem de Guilds**: Busca e exibe todas as guilds ativas do servidor Ferobra
+- **Listagem de Guilds**: Busca e exibe todas as guilds ativas do servidor Inabra
 - **Seleção de Guild**: Dropdown interativo para selecionar uma guild específica
 - **Interface Moderna**: Design responsivo com Material-UI
 - **API Integration**: Integração com a API oficial do TibiaData
@@ -35,7 +35,7 @@ npm run build
 
 A aplicação utiliza a API do TibiaData para buscar informações sobre guilds:
 
-- **Endpoint**: `https://api.tibiadata.com/v4/guilds/Ferobra`
+- **Endpoint**: `https://api.tibiadata.com/v4/guilds/Inabra`
 - **Documentação**: [TibiaData API](https://tibiadata.com/doc-api-v4/)
 
 ## 📁 Estrutura do Projeto

@@ -44,7 +44,7 @@ export const Tracker: React.FC = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await TibiaApiService.getGuilds('Ferobra');
+      const response = await TibiaApiService.getGuilds('Inabra');
       setGuilds(response.guilds.active);
     } catch (err) {
       console.error('Erro ao carregar guilds:', err);
@@ -107,7 +107,7 @@ export const Tracker: React.FC = () => {
         </Typography>
         
         <Typography variant="subtitle1" color="text.secondary" align="center" sx={{ mb: 3 }}>
-          Rastreie jogadores online do servidor Ferobra
+          Rastreie jogadores online do servidor Inabra
         </Typography>
 
         <Box sx={{ maxWidth: 600, mx: 'auto' }}>
@@ -223,7 +223,7 @@ export const Tracker: React.FC = () => {
           borderTop: '1px solid rgba(255, 255, 255, 0.1)'
         }}>
           <Typography variant="body2" color="text.secondary">
-            Total de guilds ativas: {guilds.length} • Servidor: Ferobra
+            Total de guilds ativas: {guilds.length} • Servidor: Inabra
           </Typography>
           {error && (
             <Alert severity="error" sx={{ mt: 2, maxWidth: 600, mx: 'auto' }}>
